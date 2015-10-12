@@ -22,8 +22,16 @@ var coords = {
         var min = (x - Math.floor(x)) * 60;
         var sec = (min - Math.floor(min)) * 60;
         min = Math.floor(min);
-        sec = Math.floor(sec);
-        return deg + '° ' + min + '′ ' + sec + '″';
+        var retVal='';
+        if ( !format || format == 'original' ){
+            sec = Math.floor(sec);
+            retVal = deg + '° ' + min + '′ ' + sec + '″';
+        }
+        if (format == 'blank'){
+            retVal = deg + ' ' + min + ' ' + sec;
+        }
+
+        return retVal;
     },
 
     parse: function(x) {
