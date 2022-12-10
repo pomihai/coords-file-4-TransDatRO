@@ -1,5 +1,5 @@
 This JScript program module is intended to run within a MS Windows OS (WSH)
-Create a file readable in [TransDatRO](http://www.ancpi.ro/pages/download.php?lang=ro) the official romanian
+Create a file readable in [TransDatRO](https://www.ancpi.ro/download/?perPage=50) the official romanian
 cadastre coordinates transformation program.
 The output file format is as follows:
 
